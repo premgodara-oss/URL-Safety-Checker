@@ -11,7 +11,7 @@ This project is a web application designed to detect phishing URLs using machine
 ## Setup
 
 ```bash
-git clone https://github.com/USERNAME/REPO.git
-cd REPO
+git clone https://github.com/premgodara-oss/phising_url_detection.git
+cd phising_url_detection
 pip install -r requirements.txt
 python app.py
