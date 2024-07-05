@@ -1,7 +1,9 @@
 # Phishing URL Detection
 
 This project is a web application designed to detect phishing URLs using machine learning.
+![Extension Demo](phising.png)
 
+<br>
 ## Features
 
 - User Input: Allows users to input a URL for analysis.
