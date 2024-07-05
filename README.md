@@ -1,2 +1,17 @@
-# phising_url_detection
-This project is a web application designed to detect phishing URLs using machine learning. It leverages Flask for the web framework and a pre-trained Gradient Boosting Classifier model for the prediction. Users can input a URL, and the application will analyze its features to determine the probability of it being a phishing site.
+# Phishing URL Detection
+
+This project is a web application designed to detect phishing URLs using machine learning.
+
+## Features
+
+- User Input: Allows users to input a URL for analysis.
+- Feature Extraction: Extracts relevant features from the URL.
+- Prediction: Provides a prediction on whether the URL is safe or potentially phishing.
+
+## Setup
+
+```bash
+git clone https://github.com/USERNAME/REPO.git
+cd REPO
+pip install -r requirements.txt
+python app.py
