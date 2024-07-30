@@ -8,16 +8,7 @@ services:
       pip install -r requirements.txt
     startCommand: gunicorn app:app
     autoDeploy: true
-    region: oregon  # Replace with your preferred region
+    region: singapore  
     envVars:
       - key: FLASK_ENV
         value: production
-
-# Optionally add alerts
-alerts:
-  - event: deployFailed
-    send: true
-    email: premgodara225@gmail.com
-  - event: deploySucceeded
-    send: true
-    email: premgodara225@gmail.com
