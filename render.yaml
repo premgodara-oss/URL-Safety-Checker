@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: phishing-url-detection
+    env: python
+    plan: free
+    buildCommand: |
+      apt-get update && apt-get install -y build-essential libpq-dev libssl-dev
+      pip install --upgrade pip setuptools wheel
+      pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    autoDeploy: true
+    region: oregon  # Choose a region closer to your users
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: SECRET_KEY
+        value: your_secret_key_here
+      # Add more environment variables if needed
+
+  alerts:
+    - event: deployFailed
+      send: true
+      email: your-email@example.com
+    - event: deploySucceeded
+      send: true
+      email: your-email@example.com
