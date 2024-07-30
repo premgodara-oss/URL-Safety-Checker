@@ -3,7 +3,7 @@
 ## Overview
 The URL Safety Checker is a tool designed to assess the safety of URLs by analyzing them against various threat databases and heuristic checks. This project aims to help users identify potentially malicious or harmful websites.
 
-![Extension Demo](phising.png)
+![Extension Demo](2024-07-30.png)
 ## Features
 - Checks URLs against multiple threat databases
 - Analyzes URLs for phishing threats.
